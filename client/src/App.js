@@ -10,12 +10,12 @@ class App extends React.Component {
 
   componentDidMount(){
     axios.get('http://localhost:5000')
-    .then((response)=> {
+    .then((response) => {
       this.setState({
         data: response.data
       })
     })
-    .catch((error)=> {
+    .catch((error) => {
       console.error(`Error fetching data: ${error}`);
     })
   }
@@ -30,9 +30,6 @@ class App extends React.Component {
       </div>
     );
   }
-
 }
-
-
 
 export default App;
