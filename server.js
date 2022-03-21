@@ -37,7 +37,7 @@ app.get('/', (req, res) =>
 
 /** 
  * @route POST api/users
- * @decode Register user
+ * @decode  user
 */
 
 app.post('/api/users',
