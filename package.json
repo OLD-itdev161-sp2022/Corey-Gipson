@@ -10,6 +10,10 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  "resolutions": {
+    "d2/left-pad": "1.1.1",
+    "c/**/left-pad": "^1.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itdev161-sp2022/Corey-Gipson.git"
@@ -21,6 +25,8 @@
   },
   "homepage": "https://github.com/itdev161-sp2022/Corey-Gipson#readme",
   "dependencies": {
+    "@types/node": "^17.0.23",
+    "accepts": "^1.3.8",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.7",
     "cors": "^2.8.5",
@@ -28,11 +34,11 @@
     "express": "^4.17.2",
     "express-validator": "^6.14.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.9",
-    "react-router-dom": "^5.2.0"
+    "mongoose": "^6.1.9"
   },
   "devDependencies": {
     "concurrently": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "nodemon": "^2.0.15"
   }
 }
